@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="plunker" >
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Plunker</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link rel="stylesheet" href="style.css">
+  <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="LunchCheckController">
+  <h1>Lunch Checker</h1>
+  <div>
+    <input ng-model="name">
+    <p>The name is ====>   {{name}}</p>
+    <div id="d">{{check();}}</div>
+    <div >
+             <button class="btn btn-default" ng-click="check()">Check If Too Much</button>
+         </div>
+
+  </div>
+</body>
+</html>
